@@ -16,7 +16,7 @@ export default function Sidebar() {
           <li><a href="#"><i class="fas fa-info-circle"></i>Help <i style={{ marginLeft: "91px" }} class="fas fa-angle-right"></i></a></li>
         </ul>
         <div class="profile">
-          <img className="pic" src="/public/profile.jpg"></img>
+          <img className="pic" src="profile.jpg"></img>
           <div>
             <p className="name">Mohit</p>
             <p className="designation">Frontend Developer</p>
@@ -26,7 +26,7 @@ export default function Sidebar() {
       </div>
       <div className="rightside">
         <div className="header">
-          <p style={{ fontWeight: "bold",marginTop:"3px" }}>Hello Mohit <img className="hand" src="/public/handwave.png"></img>,</p>
+          <p style={{ fontWeight: "bold",marginTop:"3px" }}>Hello Mohit <img className="hand" src="handwave.png"></img>,</p>
           <input className="searchbox" placeholder="🔍 Search" type="search"></input>
         </div>
         <div className="boxes">
