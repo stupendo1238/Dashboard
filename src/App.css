@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.sidebar{
+  background: #120d2b;
+  width:310px;
+  height:91.5vh;
+  padding: 30px 0px;
+}
+
+.dashboard{
+  color: #fff;
+  margin-left:25px;
+  margin-bottom: 30px;
+  font-size:19px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 7px 5px 7px 15px;
+  margin:15px 15px 15px 10px;
+  font-size:14px;
+}    
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #193076;
+  border-radius:8px;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.profile{
+  display: flex;
+  gap:10px;
+  width:180px;
+  position:absolute;
+  bottom:60px;
+  left:20px;
+  padding:8px 15px;
+  border-radius:6px;
+  background-color:#193076;
+}
+.pic{
+  width:30px;
+  height:30px;
+  margin:auto 0;
+  border-radius:50px;
+}
+.name{
+  color:white;
+  font-size:12px;
+}
+.hand{
+  width:15px;
+  height:15px;
+}
+.designation{
+  color:#bdb8d7;
+  font-size:10px;
+}
+.searchbox{
+  width:160px;
+  height:33px;
+  border:none;
+  border-radius:5px;
+  padding-left:9px;
+}
+.searchbox1{
+  width:100px;
+  height:24px;
+  background-color:#e5e5f1;
+  border:none;
+  border-radius:5px;
+  padding-left:9px;
+}
+.rightside{
+  display:flex;
+  width:100vw;
+  height:100vh;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  flex-direction:column;
+  align-items:center;
+}
+.header{
+  display:flex;
+  width:70.5vw;
+  justify-content:space-between;
+  padding:20px 40px;
+}
+.boxes{
+  display:flex;
+  gap:36px;
+  flex-wrap:wrap;
+  padding:0px 40px;
+  justify-content:center;
+}
+.innerbox{
+  display:flex;
+  gap:10px;
+  padding:10px 18px;
+  background-color:white;
+  width:fit-content;
+  border-radius:10px;
+}
+.graphcontainer{
+  display:flex;
+  flex-wrap:wrap;
+  gap:90px;
+  margin-top:3vh;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:3vh;
+}
+.columnchart{
+  width:37vw;
+  background:white;
+  padding:10px 40px;
+  border-radius:15px;
+}
+.circularchart{
+  position:relative;
+  background:white;
+  padding:21px 50px;
+  width:16vw;
+  border-radius:15px;
+}
+.para1{
+  position:absolute;
+  top:47%;
+  font-weight:bold;
+  font-size:22px;
+  right:43%;
+}
+.para2{
+  position:absolute;
+  top:54%;
+  font-size:15px;
+  right:39%;
+}
+.para3{
+  position:absolute;
+  top:58%;
+  font-size:15px;
+  right:38%;
+}
+.table{
+  margin:10px 0 20px 0;
+  background-color:white;
+  border-radius:15px;
+  padding:0px 15px;
+}
+/* Table.css */
+
+.product-table {
+  margin-top:10px;
+  width: 69vw;
+  border-collapse: collapse;
+}
+th{
+  border-bottom:1px solid #e5e5f1;
+  color:darkgray;
+  font-size:10px;
+}
+td{
+  border:none;
+}
+
+td,th {
+  padding: 6px;
+  text-align:left;
+}
+
+th,td {
+  background-color:white;
+}
+
+.product-cell {
+  display: flex;
+  gap:5px;
+  align-items: center;
+}
+.product-table th:first-child,
+.product-table td:first-child {
+  width: 70%; /* Set width for the first column (Product Name) */
+}
+
+.product-table th:not(:first-child),
+.product-table td:not(:first-child) {
+  width: 10%; /* Set width for the other columns (40% / 3) */
+}
+
+.product-cell img {
+  width: 55px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius:7px;
+}
+
+
+@media(max-width: 1250px){
+ .header{
+   width:65vw;
+ }
+  .sidebar{
+    height:95vh;
+  }
+  .graphcontainer{
+    gap:30px;
+  }
+  .columnchart{
+    width:39vw;
+    margin-left:1vw;
+  }
+  .profile{
+    left:18px;
+  }
+  .circularchart{
+    padding:30px;
+    margin-right:1vh;
+  }
+  .para1,.para2,.para3{
+    display:none;
+  }
+}
+@media(max-width: 1050px){
+  .header{
+     width:55vw;
+   }
+  .graphcontainer{
+    margin-top:3vh;
+    gap:30px;
+  }
+  .profile{
+    left:13px;
+  }
+  .sidebar{
+    height:96.9vh;
+  }
+  .columnchart{
+    width:50vw;
+    margin-top:3vh;
+  }
+  .circularchart{
+    width:30vw;
+  }
+  .graphcontainer{
+    gap:20px;
+  }
+}
+@media(max-width: 900px){
+  .sidebar{
+    display:none;
+  }
+  .header{
+    width:85vw;
+  }
+  .columnchart{
+    width:65vw;
+  }
+}
+@media(max-width: 500px){
+  .boxes{
+    gap:10px;
+  }
+  .circularchart{
+    width:60vw;
+    padding:30px;
+  }
+  .innerbox{
+    padding:15px 50px;
+    gap:30px;
+  }
+  .searchbox1{
+    display:none;
+  }
+  td{
+    margin-bottom:1vw;
+  }
+}
