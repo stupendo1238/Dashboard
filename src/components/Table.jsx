@@ -4,28 +4,28 @@ import React from 'react';
 const data = [
   {
     productName: 'Product A',
-    image: '/public/profile.jpg',
+    image: 'profile.jpg',
     stockQuantity: 100,
     price: '$20.99',
     totalSales: 500,
   },
   {
     productName: 'Product B',
-    image: '/public/profile.jpg',
+    image: 'profile.jpg',
     stockQuantity: 120,
     price: '$21.99',
     totalSales: 500,
   },
    {
      productName: 'Product C',
-     image: '/public/profile.jpg',
+     image: 'profile.jpg',
      stockQuantity: 80,
      price: '$22.99',
      totalSales: 500,
    },
   {
     productName: 'Product D',
-    image: '/public/profile.jpg',
+    image: 'profile.jpg',
     stockQuantity: 110,
     price: '$23.99',
     totalSales: 500,
